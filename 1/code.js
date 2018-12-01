@@ -7,7 +7,7 @@ while(true) {
     frequencyStart = frequencies.reduce((sum, frequency) => {
         sum += parseInt(frequency);
         if (frequencySums[sum]) {
-            throw `Frequency Found: ${sum}`
+            throw `Frequency Found: ${sum}`;
         }
         frequencySums[sum] = true;
         return sum;
